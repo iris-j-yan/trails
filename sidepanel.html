@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="panel">
+  <div class="header">
+    <div class="header-title">
+      <h2>trails.ai</h2>
+      <h1 class="lead-pm">Lead Product Manager</h1>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <button id="createTrailBtn" class="btn-rounded" style="display: block">+ Create a Trail</button>
+    <button id="completeTrailBtn" class="btn-rounded active" style="display: none">Complete Trail</button>
+  </div>
+
+  <div class="input-section">
+    <input type="text" class="input-rounded" placeholder="✨ What do you want to do?">
+  </div>
+
+  <!-- New section that will be toggled -->
+<!--   <div id="creatingTrailSection" class="trail trail-box creating-trail-section" style="display: none;">
+    <p>Creating trail...</p>
+    <div class="trail-icons">
+      <span>1</span>
+      <span>N</span>
+      <span>W</span>
+    </div>
+    <p>Creating a new trail</p>
+  </div> -->
+
+  <div id="creatingTrailSection" class="trails-section" style="display: none;">
+    <h3 id="creatingTrailHeading">Creating New Trail...</h3>
+    <div class="trail trail-box">
+      <div class="trail-icons">
+        <!-- Icons or images representing trail steps -->
+        <span><img id="i1" class="app-icon" src="images/icons/productboard.png" style="display: none;"></span><div id="l1" class="line" style="display: none;"></div><!-- 
+        --><span><img id="i2" class="app-icon" src="images/icons/jira.svg" style="display: none;"></span><div id="l2" class="line" style="display: none;"></div><!-- 
+        --><span><img id="i3" class="app-icon" src="images/icons/figma.png" style="display: none;"></span><div id="l3" class="line" style="display: none;"></div><!-- 
+        --><span><img id="i4" class="app-icon" src="images/icons/jira.svg" style="display: none;"></span><div id="l4" class="line" style="display: none;"></div><!-- 
+        --><span><img id="i5" class="app-icon" src="images/icons/slack.png" style="display: none;"></span>
+      </div>
+      <p id="trailSummary">Waiting for completion... ✨</p>
+    </div>
+    <br>
+</div>
+
+  <div class="trails-section">
+    <h3>Your Most Loved Trails</h3>
+    <div class="trail trail-box">
+      <div class="trail-icons">
+        <!-- Icons or images representing trail steps -->
+        <span><img class="app-icon" src="images/icons/calendar.png"></span><div class="line"></div><!-- 
+        --><span><img class="app-icon" src="images/icons/notion.png"></span><div class="line"></div><!--
+        --><span><img class="app-icon" src="images/icons/lattice.png"></span>
+      </div>
+      <p>Onboard a New PM</p>
+    </div>
+    <div class="trail trail-box">
+      <div class="trail-icons">
+        <!-- Icons or images representing trail steps -->
+        <span><img class="app-icon" src="images/icons/productboard.png"></span><div class="line"></div><!-- 
+        --><span><img class="app-icon" src="images/icons/jsm.jpeg"></span><div class="line"></div><!-- 
+        --><span><img class="app-icon" src="images/icons/zendesk.png"></span><div class="line"></div><!-- 
+        --><span><img class="app-icon" src="images/icons/amplitude.webp"></span><div class="line"></div><!-- 
+        --><span><img class="app-icon" src="images/icons/shopify.webp"></span>
+      </div>
+      <p>Prepare a Product Launch</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+
+    <div class="tabs">
+        <button class="tab-button" id="trails-button">Trails</button>
+        <button class="tab-button" id="analytics-button">Analytics</button>
+    </div>
+    <div id="Trails" class="tab-content">
+        <button class="green-button">Create new trail</button><br>
+        <div class="subsection">
+            <h3>Your previous trails on google.com</h3>
+            <button class="white-button">Create user journey</button><br>
+            <button class="white-button">Schedule candidate for interview</button>
+        </div><br>
+        <div class="subsection">
+            <h3>✨ Discover</h3>
+            ...<br>
+        </div>
+    </div>
+    <div id="Analytics" class="tab-content">
+        <p>World content here...</p>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>

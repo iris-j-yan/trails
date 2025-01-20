@@ -1,0 +1,241 @@
+
+.panel {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f7ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-title {
+  text-align: left;
+}
+
+.header h2 {
+  margin: 0;
+  color: #5bb85b;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lead-pm {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+/*.tab-button {
+    flex-grow: 1;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #666;
+}
+
+.tab-button:hover, .tab-button.active {
+    background-color: #e2e2e2;
+    color: #000;
+}*/
+
+.btn-rounded, .input-rounded {
+  flex-grow: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #5bb85b;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border-color: #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.btn-rounded {
+  display: block;
+  text-align: center;
+}
+
+.btn-rounded:hover, .btn-rounded.active {
+  background-color: CornflowerBlue;
+}
+
+.creating-trail-section {
+  margin-bottom: 20px;
+}
+
+.input-rounded {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+.input-section {
+  margin: 20px 0;
+}
+
+.trails-section h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.trail-box {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px; /* Spacing between trail boxes */
+}
+
+.trail-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.trail-icons span {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px;
+  border-color: #333;
+}
+
+.trail p {
+  margin: 0;
+  color: #333;
+}
+
+
+.app-icon {
+    border-radius: 4px;
+    border: 1px;
+    border-color: #333;
+    height: 28px;
+    width: 28px;
+    background-color: #fff;
+}
+
+div.line {
+  display: inline-block;
+  border-top: 1px solid #333;
+  width: 2em;
+}
+
+/* Base styles and resets */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'San Francisco', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5; /* Light grey background */
+    color: #333;
+    -webkit-font-smoothing: antialiased; /* Enhance the readability on macOS and iOS */
+}
+
+.tabs {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Ensures children (tabs) conform to the border radius */
+}
+
+.tab-button {
+    flex-grow: 1;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #666;
+}
+
+.tab-button:hover, .tab-button.active {
+    background-color: #e2e2e2;
+    color: #000;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* Style adjustments for all buttons */
+.green-button, .white-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px; /* Uniform padding */
+    margin: 10px 8px 10px 0; /* Adequate spacing between buttons */
+    border-radius: 8px; /* Rounded rectangle shape */
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block; /* Ensures buttons don't break layout */
+    min-width: 120px; /* Minimum width to prevent too much shrinkage */
+}
+
+.green-button {
+    background-color: #4CD964; /* Vivid green */
+    color: white;
+    border: none;
+}
+
+.white-button {
+    width: 100%;
+    text-align: left;
+}
+
+.green-button:hover {
+    background-color: #42be56; /* Slightly darker green */
+}
+
+.white-button:hover {
+    background-color: #f5f5f5;
+    border-color: #bbb;
+}
+
+/* Styling for subsections */
+.subsection {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.subsection h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 0 0 10px 0; /* Reset margin and add bottom margin */
+}

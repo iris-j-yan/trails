@@ -1,0 +1,132 @@
+/* Reset some default styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the tab buttons */
+.tabs {
+    display: flex;
+    justify-content: start;
+    background-color: #2C3E50; /* Dark blue background */
+    padding: 0;
+}
+
+/* Style for the tab buttons */
+.tab-button {
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for tab buttons */
+.tab-button:hover, .tab-button.active {
+    background-color: #34495E; /* Slightly darker blue on hover */
+}
+
+/* Default styling for tab content areas */
+.tab-content {
+    display: none; /* Hidden by default */
+    padding: 20px;
+    border-top: none;
+    color: #333;
+    background-color: #ECF0F1; /* Light gray background */
+}
+
+/* Style for buttons inside the tab content */
+.green-button, .white-button {
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.green-button {
+    background-color: #2ECC71; /* Vivid green */
+    color: white;
+}
+
+.green-button:hover {
+    background-color: #27AE60; /* Darker green on hover */
+}
+
+.white-button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #BDC3C7; /* Light grey border */
+}
+
+.white-button:hover {
+    background-color: #ECF0F1; /* Light gray on hover */
+    border-color: #95A5A6; /* Slightly darker grey border on hover */
+}
+
+/* Subsection titles */
+.subsection h3 {
+    margin-top: 0;
+    color: #34495E; /* Dark grey-blue for text */
+    font-size: 18px;
+}
+
+
+/* v1
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.tab-button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.green-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.white-button {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+*/
